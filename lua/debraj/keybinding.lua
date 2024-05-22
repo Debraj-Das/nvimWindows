@@ -9,7 +9,6 @@ vim.keymap.set('n', '<CR>', 'o<ESC>', { noremap = true })
 vim.keymap.set('n', '<C-j>', ':m+1<CR>', { noremap = true })
 vim.keymap.set('n', '<C-k>', ':m-2<CR>', { noremap = true })
 vim.keymap.set('n', 'd', '"_d', { noremap = true })
-vim.keymap.set('n', '<BS>', '"_xh', { noremap = true })
 vim.keymap.set("n", "n", "nzzzv", { noremap = true })
 vim.keymap.set("n", "N", "Nzzzv", { noremap = true })
 
