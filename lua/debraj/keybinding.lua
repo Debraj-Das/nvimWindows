@@ -17,11 +17,11 @@ vim.keymap.set('v', '<C-k>', ':m\'<-2<CR>gv=gv', { noremap = true })
 vim.keymap.set('v', '<', '<gv', { noremap = true })
 vim.keymap.set('v', '>', '>gv', { noremap = true })
 vim.keymap.set('v', 'd', '"_d', { noremap = true })
+vim.keymap.set('v', 'p', '"_dp',{ noremap = true })
 
 -- Insert mode key bindings
 vim.keymap.set('i', '<C-j>', '<Esc>o', { noremap = true })
 vim.keymap.set('i', '<C-h>', '<C-w>', { noremap = true })
-vim.keymap.set('i', '{<CR>', '{<CR>}<esc>ko', { noremap = true })
 
 -- Leader key mappings
 vim.keymap.set('n', '<Leader>n',  vim.cmd.tabnew, { noremap = true })
@@ -33,6 +33,7 @@ vim.keymap.set('n', '<Leader>y', '<esc>:%y+<CR>', { noremap = true })
 vim.keymap.set('n', '<Leader>v', '<C-v>', { noremap = true })
 vim.keymap.set('n', '<Leader>r', '<C-r>', { noremap = true })
 vim.keymap.set('n', '<Leader>h', ':set hlsearch!<CR>', { noremap = true })
+vim.keymap.set('n', '<leader>e', vim.cmd.Ex, {noremap = true})
 
 -- [ key bindings
 vim.keymap.set('n', '[', '<C-w>', { noremap = true })
