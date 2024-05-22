@@ -56,6 +56,9 @@ vim.wo.number = true
 -- Display relative line numbers
 vim.wo.relativenumber = true
 
+-- explorer setting
+vim.g.netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
+
 -- Set backspace behavior
 vim.o.backspace = "2"
 
