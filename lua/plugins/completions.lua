@@ -18,8 +18,8 @@ return {
 			local snippets_path = vim.fn.stdpath('config') .. '\\snippets\\'
 			require("luasnip.loaders.from_lua").load({paths = snippets_path})
 
-			vim.keymap.set({"i", "s"}, "<C-n>", function() ls.jump( 1) end, {silent = true})
-			vim.keymap.set({"i", "s"}, "<C-p>", function() ls.jump(-1) end, {silent = true})
+			vim.keymap.set({"i", "s"}, "<A-n>", function() ls.jump( 1) end, {silent = true})
+			vim.keymap.set({"i", "s"}, "<A-p>", function() ls.jump(-1) end, {silent = true})
 		end
 	},
 	{
