@@ -56,9 +56,6 @@ vim.wo.number = true
 -- Display relative line numbers
 vim.wo.relativenumber = true
 
--- explorer setting
-vim.g.netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
-
 -- Set backspace behavior
 vim.o.backspace = "2"
 
@@ -79,3 +76,13 @@ vim.o.foldmethod = "manual"
 
 -- Add "**" to the search path
 vim.o.path = vim.o.path .. ",**"
+
+vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
+  pattern = {"*.ejs"},
+  command = "set filetype=html"
+})
+
+vim.o.swapfile = false 
+vim.o.backup = false
+
+vim.o.scrolloff = 8
