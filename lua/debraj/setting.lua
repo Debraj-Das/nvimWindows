@@ -47,9 +47,6 @@ vim.o.writebackup = false
 -- Enable syntax highlighting
 vim.cmd("syntax on")
 
--- Set clipboard to unnamed and unnamedplus
-vim.o.clipboard = "unnamed,unnamedplus"
-
 -- Display line numbers
 vim.wo.number = true
 
@@ -82,7 +79,7 @@ vim.api.nvim_create_autocmd({"BufNewFile", "BufRead"}, {
   command = "set filetype=html"
 })
 
-vim.o.swapfile = false 
+vim.o.swapfile = false
 vim.o.backup = false
 
 vim.o.scrolloff = 8
