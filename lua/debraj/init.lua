@@ -12,6 +12,3 @@ require("debraj.keybinding")
 
 -- package manager setting
 require("debraj.lazy")
-
--- explorer setting
-require("debraj.explorer")

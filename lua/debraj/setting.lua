@@ -37,6 +37,9 @@ vim.cmd("filetype on")
 -- Enable filetype-based indentation
 vim.cmd("filetype indent on")
 
+-- Set clipboard to unnamed and unnamedplus
+vim.o.clipboard = "unnamed,unnamedplus"
+
 -- Even better autoindent (e.g., add indent after '{')
 vim.o.smartindent = true
 
@@ -83,3 +86,6 @@ vim.o.swapfile = false
 vim.o.backup = false
 
 vim.o.scrolloff = 8
+
+-- explored (netrew) setting
+vim.g.netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
