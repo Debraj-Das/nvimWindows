@@ -89,3 +89,6 @@ vim.o.scrolloff = 8
 
 -- explored (netrew) setting
 vim.g.netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
+
+vim.o.splitbelow = true
+vim.o.splitright = true

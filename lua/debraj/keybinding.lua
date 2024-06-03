@@ -34,7 +34,7 @@ vim.keymap.set('n', '<Leader>r', '<C-r>', { noremap = true })
 vim.keymap.set('n', '<Leader>h', ':set hlsearch!<CR>', { noremap = true })
 vim.keymap.set("n", "<Leader>d", "<C-d>zz", { noremap = true })
 vim.keymap.set("n", "<Leader>u", "<C-u>zz", { noremap = true })
-vim.keymap.set('n', '<leader>e', vim.cmd.Ex, {noremap = true})
+vim.keymap.set("n", "<leader>e", vim.cmd.Ex , {noremap = true})
 
 -- [ key bindings
 vim.keymap.set('n', '[', '<C-w>', { noremap = true })
