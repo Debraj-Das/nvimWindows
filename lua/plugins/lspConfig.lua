@@ -14,6 +14,11 @@ return {
 		opts = {
 			auto_install = true,
 		},
+		config = function()
+			require("mason-lspconfig").setup {
+				ensure_installed = { "ruff_lsp"},
+			}
+		end
 	},
 	{
 		"neovim/nvim-lspconfig",
@@ -21,20 +26,6 @@ return {
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
-
-			lspconfig.lua_ls.setup({
-				root_dir = function(fname)
-					return lspconfig.util.find_git_ancestor(fname) or lspconfig.util.path.dirname(fname)
-				end,
-				capabilities = capabilities,
-			})
-
-			lspconfig.quick_lint_js.setup({
-				root_dir = function(fname)
-					return lspconfig.util.find_git_ancestor(fname) or lspconfig.util.path.dirname(fname)
-				end,
-				capabilities = capabilities,
-			})
 
 			lspconfig.ruff_lsp.setup({
 				root_dir = function(fname)
